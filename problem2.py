@@ -1,13 +1,13 @@
-num1 = 1
-num2 = 2
-res = 0
-plus = 2
+fibonacci = 0
+number_1 = 1  # First value of the Fibonacci
+number_2 = 2  # Second value of the Fibonacci
+result = 2    # We start in "2" as this an even-number.
 
-while res <= 10:
-    res = num1 + num2
-    num1 = num2 
-    num2 = res
-    if res % 2 == 0:
-        plus += res
+while fibonacci < 4000000:
+    fibonacci = number_1 + number_2
+    number_1 = number_2
+    number_2 = fibonacci
+    if fibonacci % 2 == 0 and fibonacci < 4000000:
+        result += fibonacci
 
-print(plus)
+print(result)

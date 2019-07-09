@@ -1,7 +1,9 @@
-res = 0
+number_1 = 3
+number_2 = 5
+sum = 0
 
-for index in range(3, 10):
-    if((index % 3) == 0) or ((index % 5) == 0):
-        res += index
+for x in range(1000):
+    if x % number_1 == 0 or x % number_2 == 0:
+        sum += x
 
-print(res)
+print(sum)

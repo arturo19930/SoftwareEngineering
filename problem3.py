@@ -1,12 +1,12 @@
-num = 600851475143
-index = 2
-prime = 0
+number = 600851475143
+prime = 2
+largest_prime = 0
 
-while num != 1:
-    if (num & index) == 0:
-        num /= index
-        prime = index
+while number != 1:
+    if (number % prime) == 0:
+        number /= prime
+        largest_prime = prime
     else:
-        index += 1
+        prime += 1
 
 print(prime)
